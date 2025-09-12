@@ -1,6 +1,10 @@
+---
+layout: index
+---
+
 # Python Basics
 
-Python is a high level dynamically typed language which is widely used for data analyics, processing, machine learning, and automation scripts. The rest of this page will break down what each part of that means.
+Python is a high level dynamically typed language which is widely used for data analyics, processing, machine learning, and automation scripts. The rest of this page will break down what each part of that means. <!-- Do students new to programming need to know this? -->
 
 ## High Level vs Low Level
 
@@ -17,3 +21,8 @@ No, not typing as in typing on a keyboard. Type in programming refers to what a 
 Static typing is when the type (shape) of the data is set by the programmer explicitly. That data can only be that one shape, and trying to shove a different shape into it will cause problems. For example, defining data `x` to be a number, I can assign it the value `1`. But if I try to assign itt `"cake"`, there will be an error because "cake" is not a number. And if I take `x` (currently `1`) and try to add `"1"` (the actual character `"1"`, not the number), it will also error.
 
 Dyamic typing is a lot looser. Types still exist, but they are not defined ahead of time. The data takes the shape that is needed at the time and can be changed on the fly. Instead of defining `x` to be a number, `x` is just defined as data. `x` can be assigned to `1` with no issues. If `x` is then assigne to `"cake"`, the type of `x` will change to text. The value of `x` will be `"cake"` even though it started as a number. Now, let's set `x` back to `1` and see what happens when we try adding `"1"`. We get `"11"`! Errors like this in a dynamically typed language are more common as the computer won't check to ensure the data has the right shape before using it.
+
+## Using Python <!-- Do we want our own tutorials for general python or just for the tools/libraries that we use --> 
+<!-- https://github.com/RobotCasserole1736/OffseasonTraining/blob/master/Chapter_1/readme.md -->
+
+So, now that we know what Python is, lets write out first program. For now we will assume that you have WPILib VSCode installed. If you need to install WPILib VSCode, click [here.](https://frcdocs.wpi.edu/en/2020/docs/getting-started/getting-started-frc-control-system/wpilib-setup.html#:~:text=Download%20the%20appropriate%20installer%20for%20your%20Windows%20installation,installer%20is%20extracted%20before%20attempting%20to%20run%20it.) 

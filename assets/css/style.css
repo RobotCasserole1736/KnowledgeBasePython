@@ -1,0 +1,30 @@
+@import "{{ site.theme }}";
+
+/* for now using css, we can switch to scss if needbe but CSS was easier for local testing*/
+
+
+header .flexbox{
+    display: flex;
+    height: 100px;
+    color:aliceblue;
+    background-color: black;
+}
+
+body{
+    background-color: darkgray;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin:0;
+}
+
+#logo{
+    margin:8px;
+}
+
+main{
+    margin:8px;
+}
+
+.wrapper{
+    color: whitesmoke;
+}
+
