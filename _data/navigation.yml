@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: About
+  link: /about.html
+- name: Page-List
+  link: /pagelist.html
+- name: Article-List
+  link: /articlelist.html
+- name: category-List 
+  link: /categorylist.html

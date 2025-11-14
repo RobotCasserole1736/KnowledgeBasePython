@@ -1,0 +1,13 @@
+---
+layout: mainPage
+title: articles
+---
+<h1>articles</h1>
+
+<ul>
+  {% for author in site.articles %}
+    <li>
+      <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="\assets\css\style.css"> 
+    </head>
+
+    <body>
+
+        
+<header>
+    
+    <body id="navbody">
+    
+    
+        <img id="logo" src="assets\testImage.jpg" alt="Test logo ">
+        
+        <nav>
+        <ul id="buttonList">
+        <li><a href="/">Home</a></li>
+        <li><a href="/README.html">test page</a></li>
+        <li><a href="/pagelist.html">article list</a></li>
+        </ul>
+        </nav>
+    </body>
+    
+</header>
+
+
+
+        <main> 
+            <h1 id="python-basics">Python Basics</h1>
+
+<p>Python is a high level dynamically typed language which is widely used for data analyics, processing, machine learning, and automation scripts. The rest of this page will break down what each part of that means. <!-- Do students new to programming need to know this? --></p>
+
+<h2 id="high-level-vs-low-level">High Level vs Low Level</h2>
+
+<p>What is a high level language? What makes one high level? A high level language is one that is designed, primarily, for human readabiliy ([https://en.wikipedia.org/wiki/High-level_programming_language]). A high level language may read like a sentence, and needs to be translated into the actual 1’s and 0’s that the computer itself understands. Soem popular high level languages are JavaScript, Java, and of course, Python.</p>
+
+<p>On the opposite end of the spectrum, you have low level languages. These are your C, C++, Rust, and Fortran’s of the world. They forego human readability in favor of more direct, and faster, processing. The speed increase comes from the or fewer number of translation layers - low level languages only need a few steps to be binary.</p>
+
+<p>Pop quiz, what is the lowest level language? At its core, all computers run in binary and every program needs to be translate into binary to be run. However, binary isn’t really a language, you can’t (realistically) program anything in binary. So, to clarify the question, what is the lowest level language that can actually be written in? The answer to that is assembly. Assembly is one step above binary, and directly relates to the physical processor running the code. Different physical differences in processors necessitate different assembly code, which is a can of worms that will be covered on a different page. Just know that if you want things to be as fast as computerly possible, assembly is what you use.</p>
+
+<h2 id="typing-dynamic-vs-static">Typing: Dynamic vs Static</h2>
+
+<p>No, not typing as in typing on a keyboard. Type in programming refers to what a certain piece of data is - is it a number, text, true/false, or something else? It’s kinda like the shape of the data, it defines what can fit into that bucket and how it can be used.</p>
+
+<p>Static typing is when the type (shape) of the data is set by the programmer explicitly. That data can only be that one shape, and trying to shove a different shape into it will cause problems. For example, defining data <code class="language-plaintext highlighter-rouge">x</code> to be a number, I can assign it the value <code class="language-plaintext highlighter-rouge">1</code>. But if I try to assign itt <code class="language-plaintext highlighter-rouge">"cake"</code>, there will be an error because “cake” is not a number. And if I take <code class="language-plaintext highlighter-rouge">x</code> (currently <code class="language-plaintext highlighter-rouge">1</code>) and try to add <code class="language-plaintext highlighter-rouge">"1"</code> (the actual character <code class="language-plaintext highlighter-rouge">"1"</code>, not the number), it will also error.</p>
+
+<p>Dyamic typing is a lot looser. Types still exist, but they are not defined ahead of time. The data takes the shape that is needed at the time and can be changed on the fly. Instead of defining <code class="language-plaintext highlighter-rouge">x</code> to be a number, <code class="language-plaintext highlighter-rouge">x</code> is just defined as data. <code class="language-plaintext highlighter-rouge">x</code> can be assigned to <code class="language-plaintext highlighter-rouge">1</code> with no issues. If <code class="language-plaintext highlighter-rouge">x</code> is then assigne to <code class="language-plaintext highlighter-rouge">"cake"</code>, the type of <code class="language-plaintext highlighter-rouge">x</code> will change to text. The value of <code class="language-plaintext highlighter-rouge">x</code> will be <code class="language-plaintext highlighter-rouge">"cake"</code> even though it started as a number. Now, let’s set <code class="language-plaintext highlighter-rouge">x</code> back to <code class="language-plaintext highlighter-rouge">1</code> and see what happens when we try adding <code class="language-plaintext highlighter-rouge">"1"</code>. We get <code class="language-plaintext highlighter-rouge">"11"</code>! Errors like this in a dynamically typed language are more common as the computer won’t check to ensure the data has the right shape before using it.</p>
+
+<h2 id="using-python-">Using Python <!-- Do we want our own tutorials for general python or just for the tools/libraries that we use --></h2>
+<!-- https://github.com/RobotCasserole1736/OffseasonTraining/blob/master/Chapter_1/readme.md -->
+
+<p>So, now that we know what Python is, lets write out first program. For now we will assume that you have WPILib VSCode installed. If you need to install WPILib VSCode, click <a href="https://frcdocs.wpi.edu/en/2020/docs/getting-started/getting-started-frc-control-system/wpilib-setup.html#:~:text=Download%20the%20appropriate%20installer%20for%20your%20Windows%20installation,installer%20is%20extracted%20before%20attempting%20to%20run%20it.">here.</a></p>
+
+        </main>
+
+    </body>
+
+</html>

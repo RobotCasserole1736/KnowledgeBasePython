@@ -1,0 +1,11 @@
+---
+name: python
+laypout: mainPage
+---
+<ul>
+{% for article in site.articles %}
+    {% if article.category == "python" %}
+        <li> <a href="{{article.url}}">{{article.name}}</a></li>
+    {%endif %}
+{% endfor %}
+</ul>
