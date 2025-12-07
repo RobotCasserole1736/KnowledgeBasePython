@@ -1,9 +1,14 @@
 ---
 layout: page
-name: pythonBasics
+name: Python Basics
 subject: Python
 updated: Dec 2 2025
+articleBefore: none
+articleAfter: none
 ---
+
+{% include articleHead.md %}
+
 # Python Basics
 
 Python is a high level dynamically typed language which is widely used for data analyics, processing, machine learning, and automation scripts. The rest of this page will break down what each part of that means.

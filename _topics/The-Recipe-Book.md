@@ -1,6 +1,6 @@
 ---
 layout: page
-name: TheRecipeBook
+name: The Recipe Book
 desc: Information about the recipe book, including guides on modifying articles, adding categories, and a (hopefully) simple overveiw about the tools we use for curious software students.
 ---
 

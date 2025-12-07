@@ -1,6 +1,7 @@
 ---
 layout: page
 name: contents
+permalink: /contents/
 ---
 
 <ul>
