@@ -2,7 +2,7 @@
 layout: page
 name: Modifying The Recipe Book
 subject: The Recipe Book
-updated: Dec 2 2025
+updated: Dec 7 2025
 articleBefore: none
 articleAfter: Recipe Book Tools
 ---
