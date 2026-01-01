@@ -1,7 +1,7 @@
 ---
 layout: page
 name: Python Basics
-subject: Python
+topic: Python
 updated: Dec 2 2025
 articleBefore: none
 articleAfter: none

@@ -17,12 +17,12 @@
 {%- assign currentTopicURL = page.url -%}
 
 {%- for topics in site.topics -%}
-    {%- if topics.name == page.subject -%}
+    {%- if topics.name == page.topic -%}
         {%- assign currentTopicURL = topics.url | append: "" -%}
     {%- endif -%}
 {%- endfor -%}
 
-### Topic: [{{page.subject}}]({{currentTopicURL}}) | Last updated: {{page.updated}}
+### Topic: [{{page.topic}}]({{currentTopicURL}}) | Last updated: {{page.updated}}
 
 {% if previousPage != "first" %}
 *Previous article: [{{page.articleBefore | string }}]({{ previousPage | string }})*

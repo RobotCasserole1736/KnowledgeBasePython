@@ -1,10 +1,10 @@
 ---
 layout: page
 name: Modifying The Recipe Book
-subject: The Recipe Book
+topic: The Recipe Book
 updated: Dec 7 2025
 articleBefore: none
-articleAfter: Recipe Book Tools
+articleAfter: Writing Articles
 ---
 
 {% include articleHead.md %}

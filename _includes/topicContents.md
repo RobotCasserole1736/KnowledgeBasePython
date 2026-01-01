@@ -1,28 +1,29 @@
 <ul>
-  {% for article in site.articles %}
-    {% if article.subject == page.name and article.articleBefore == "none" %}
-        <li> <a href="{{article.url}}">{{article.name}} - ({{article.updated}})</a></li>
+    {% for article in site.articles %}
+        {% if article.topic == page.name and article.articleBefore == "none" %}
+            <li> <a href="{{article.url}}">{{article.name}} - ({{article.updated}})</a></li>
+            {% assign rootArticle = article %}
+        {% endif %}
+    {% endfor %}
+    
+    {% assign articleArray = site.articles | where: "topic", page.name %}
 
-        {% if article.articleAfter != "none" %}
-            {% for numbers in (1..999) %} <!-- this is meant to serve as a while loop with the if statement containing a break for this loop being the condition -->
-                {% assign endloop = false %}
-                {% for nextArticle in site.articles %}
-                    {% if nextArticle.name == article.articleAfter %}
-                        <li> <a href="{{nextArticle.url}}">{{nextArticle.name}} - ({{nextArticle.updated}})</a></li>
-                        {% if nextArticle.articleAfter == "none" %}
-                            {% assign endloop = true %}
-                        {% endif %}
-                        {% break %}
-                    {% endif %}
-                {% endfor %}
-            
-            {% if endloop == true %}
+    {% for numbers in articleArray  %} <!-- We should only have to set up as many links as there are articles. -->
+        
+        {% assign finalArticle = true %}
+
+        {% for article in site.articles %}
+            {% if article.name == rootArticle.articleAfter and article.topic == rootArticle.topic %}
+                <li> <a href="{{article.url}}">{{article.name}} - ({{article.updated}})</a></li>
+                {% assign rootArticle = article %}
+                {% assign finalArticle = false %}
                 {% break %}
             {% endif %}
-
-            {% endfor %}
+        {% endfor %}
+        
+        {% if finalArticle == true %}
+            {% break %}
         {% endif %}
 
-    {%endif %}
-  {% endfor %}
+    {% endfor %}
 </ul>
