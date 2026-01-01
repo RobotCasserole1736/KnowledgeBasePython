@@ -22,8 +22,8 @@ title: Casserole Recipe Book
 email: frc1736@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Collection of robotics info for new team members and rookie teams. 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/KnowledgeBasePython" # the subpath of your site, e.g. /blog
+url: "https://robotcasserole.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: frc1736
 github_username:  RobotCasserole1736
 
