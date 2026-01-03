@@ -1,6 +1,6 @@
 ---
 layout: page
-name: contents
+title: Contents
 permalink: /contents/
 ---
 

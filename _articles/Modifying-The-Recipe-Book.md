@@ -1,10 +1,10 @@
 ---
 layout: page
 name: Modifying The Recipe Book
-subject: The Recipe Book
+topic: The Recipe Book
 updated: Dec 7 2025
 articleBefore: none
-articleAfter: Recipe Book Tools
+articleAfter: Writing Articles
 ---
 
 {% include articleHead.md %}
@@ -20,6 +20,6 @@ Open the command prompt and navigate to the KnowledgeBasePython folder (using th
 
 Now, modify the code as you need. I will add instructions on how to add pages or topics soon.
 
-Once you are ready to test your code, open the command prompt and navigate to the KnowledgeBasePython folder again. Once there, run `bundle exec jekyll serve` which will compile your page at http://localhost:4000/. To view your page, navigate to http://localhost:4000/ in your web browser. Whenever you save a change, Jekyll will automatically recompile the change and update the page, so just refresh to see your changes. To stop viewing the page, navigate to the terminal and hit ctrl+c and type `y` and hit enter when prompted to terminate batch job.
+Once you are ready to test your code, open the command prompt and navigate to the KnowledgeBasePython folder again. Once there, run `bundle exec jekyll serve` which will compile your page at http://localhost:4000/KnowledgeBasePython/. To view your page, navigate to http://localhost:4000/ in your web browser. Whenever you save a change, Jekyll will automatically recompile the change and update the page, so just refresh to see your changes. To stop viewing the page, navigate to the terminal and hit ctrl+c and type `y` and hit enter when prompted to terminate batch job.
 
 Note - use spaces in article name variables but use dashes in file names

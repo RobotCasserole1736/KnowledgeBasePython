@@ -1,9 +1,9 @@
 ---
 layout: page
 name: Recipe Book Tools
-subject: The Recipe Book
+topic: The Recipe Book
 updated: Dec 7 2025
-articleBefore: Modifying The Recipe Book
+articleBefore: Creating New Topics
 articleAfter: none
 ---
 
