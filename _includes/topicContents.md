@@ -1,7 +1,7 @@
 <ul>
     {% for article in site.articles %}
         {% if article.topic == page.name and article.articleBefore == "none" %}
-            <li> <a href="{{article.url}}">{{article.name}} - ({{article.updated}})</a></li>
+            <li> <a href="{{article.url | relative_url}}">{{article.name}} - ({{article.updated}})</a></li>
             {% assign rootArticle = article %}
         {% endif %}
     {% endfor %}
@@ -14,7 +14,7 @@
 
         {% for article in site.articles %}
             {% if article.name == rootArticle.articleAfter and article.topic == rootArticle.topic %}
-                <li> <a href="{{article.url}}">{{article.name}} - ({{article.updated}})</a></li>
+                <li> <a href="{{article.url | relative_url}}">{{article.name}} - ({{article.updated}})</a></li>
                 {% assign rootArticle = article %}
                 {% assign finalArticle = false %}
                 {% break %}

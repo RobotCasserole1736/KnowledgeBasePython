@@ -4,21 +4,21 @@
 
 {%- for nextArticle in site.articles-%}
     {%- if nextArticle.name == page.articleAfter -%}
-        {%- assign nextPage = nextArticle.url | append: "" -%}
+        {%- assign nextPage = nextArticle.url | relative_url | append: "" -%}
     {%- endif -%}
 {%- endfor -%}
 
 {%- for nextArticle in site.articles-%}
     {%- if nextArticle.name == page.articleBefore -%}
-        {%- assign previousPage = nextArticle.url | append: "" -%}
+        {%- assign previousPage = nextArticle.url | relative_url | append: "" -%}
     {%- endif -%}
 {%- endfor -%}
 
-{%- assign currentTopicURL = page.url -%}
+{%- assign currentTopicURL = page.url | relative_url -%}
 
 {%- for topics in site.topics -%}
     {%- if topics.name == page.topic -%}
-        {%- assign currentTopicURL = topics.url | append: "" -%}
+        {%- assign currentTopicURL = topics.url | relative_url | append: "" -%}
     {%- endif -%}
 {%- endfor -%}
 
