@@ -11,9 +11,11 @@ articleAfter: Creating New Topics
 
 {% assign articleHeadExample = "{% include articleHead.md" %}
 
-{% assign articleLinkExample = "[What the user sees]{% link _articles/Creating-New-Articles "%}
+{% assign articleLinkExample = "{% link _articles/Creating-New-Articles "%}
 
-{% assign articleImageExample = "![Text describing image]{% link /assets/hat.png " %}
+{% assign articleImageExample = "{% link /assets/hat.png " %}
+
+{% assign baseLinkExample = "{{ site.baseurl" %}
 
 ### Article Code Layout
 
@@ -50,17 +52,17 @@ The article body is where the contents of the article go, put all of the cool th
 
 Linking to other articles with markdown and liquid is really easy. For example, linking to this article would look like so:
 
-[What the user sees]({% link _articles/Writing-Articles.md %})
+[What the user sees]({{ site.baseurl }}{% link _articles/Writing-Articles.md%})
 
-`{{ articleLinkExample }} %})`
+`[What the user sees]{{ baseLinkExample }} }}{{ articleLinkExample }} %})`
 
 If you are linking to a seperate website, replace everything inside the parentheses with just the link to the website.
 
 Displaying images is also easy. Here is another example:
 
-![Text describing image]({% link /assets/hat.png %})
+![Text describing image]({{site.baseurl}}{% link /assets/hat.png %} )
 
-`{{ articleImageExample }} %})`
+`![Text describing image]{{ baseLinkExample }} }}{{ articleImageExample }}  %})`
 
 Of course replacing the links to each article/image with the one you would like to link to.
 
