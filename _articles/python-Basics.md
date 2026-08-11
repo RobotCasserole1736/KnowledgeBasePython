@@ -4,7 +4,7 @@ name: Python Basics
 topic: Python
 updated: Dec 2 2025
 articleBefore: none
-articleAfter: none
+articleAfter: Object Oriented Programming
 ---
 
 {% include articleHead.md %}
@@ -15,7 +15,7 @@ Python is a high level dynamically typed language which is widely used for data 
 
 ## High Level vs Low Level
 
-What is a high level language? What makes one high level? A high level language is one that is designed, primarily, for human readabiliy ([https://en.wikipedia.org/wiki/High-level_programming_language]). A high level language may read like a sentence, and needs to be translated into the actual 1's and 0's that the computer itself understands. Soem popular high level languages are JavaScript, Java, and of course, Python.
+What is a high level language? What makes one high level? A high level language is one that is designed, primarily, for human readabiliy ([https://en.wikipedia.org/wiki/High-level_programming_language]). A high level language may read like a sentence, and needs to be translated into the actual 1's and 0's that the computer itself understands. Some popular high level languages are JavaScript, Java, and of course, Python.
 
 On the opposite end of the spectrum, you have low level languages. These are your C, C++, Rust, and Fortran's of the world. They forego human readability in favor of more direct, and faster, processing. The speed increase comes from the or fewer number of translation layers - low level languages only need a few steps to be binary.
 
@@ -25,6 +25,10 @@ Pop quiz, what is the lowest level language? At its core, all computers run in b
 
 No, not typing as in typing on a keyboard. Type in programming refers to what a certain piece of data is - is it a number, text, true/false, or something else? It's kinda like the shape of the data, it defines what can fit into that bucket and how it can be used.
 
-Static typing is when the type (shape) of the data is set by the programmer explicitly. That data can only be that one shape, and trying to shove a different shape into it will cause problems. For example, defining data `x` to be a number, I can assign it the value `1`. But if I try to assign itt `"cake"`, there will be an error because "cake" is not a number. And if I take `x` (currently `1`) and try to add `"1"` (the actual character `"1"`, not the number), it will also error.
+Static typing is when the type (shape) of the data is set by the programmer explicitly. That data can only be that one shape, and trying to shove a different shape into it will cause problems. For example, defining data `x` to be a number, I can assign it the value `1`. But if I try to assign it `"cake"`, there will be an error because "cake" is not a number. And if I take `x` (currently `1`) and try to add `"1"` (the actual character `"1"`, not the number), it will also error.
 
-Dyamic typing is a lot looser. Types still exist, but they are not defined ahead of time. The data takes the shape that is needed at the time and can be changed on the fly. Instead of defining `x` to be a number, `x` is just defined as data. `x` can be assigned to `1` with no issues. If `x` is then assigne to `"cake"`, the type of `x` will change to text. The value of `x` will be `"cake"` even though it started as a number. Now, let's set `x` back to `1` and see what happens when we try adding `"1"`. We get `"11"`! Errors like this in a dynamically typed language are more common as the computer won't check to ensure the data has the right shape before using it.
+Dyamic typing is a lot looser. Types still exist, but they are not defined ahead of time. The data takes the shape that is needed at the time and can be changed on the fly. Instead of defining `x` to be a number, `x` is just defined as data. `x` can be assigned to `1` with no issues. If `x` is then assigned to `"cake"`, the type of `x` will change to text. The value of `x` will be `"cake"` even though it started as a number. Now, let's set `x` back to `1` and see what happens when we try adding `"1"`. We get `"11"`! Errors like this in a dynamically typed language are more common as the computer won't check to ensure the data has the right shape before using it.
+
+## Data Analytics, Processing, Machine Learning, and Automation Scripts
+
+The choice to use Python over another programming language comes down to picking the right tool for the job. Want something fast, fast, and even more fast? C or C++ (or Rust) are your friends. Human readable and lots of community support? Python! There are extensive libraries and packages for Python to do just about anything you can imagine. Thats not to say every use case as a library that does it in one line though, a programmer is still needed to put these puzzle pieces together.
