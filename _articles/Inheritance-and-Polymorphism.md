@@ -4,7 +4,7 @@ name: Inheritance And Polymorphism
 topic: Python
 updated: April 30 2026
 articleBefore: Object Oriented Programming
-articleAfter: none
+articleAfter: Python Training
 ---
 
 {% include articleHead.md %}
